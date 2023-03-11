@@ -281,4 +281,3 @@ class Scr {
 class SetIcon {
 	static __Call(Name, Params) => TraySetIcon(Paths.Icons[Name],, Name ~= "Suspend|Pause")
 }
-
