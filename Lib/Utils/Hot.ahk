@@ -145,6 +145,7 @@ class Hot {
 			Keys.Reverse()
 
 		KeyList := Keys.Join("`n")
+		; KeyList := "`n".Join(Keys)
 
 		for KeyName in Keys {
 

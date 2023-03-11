@@ -8,15 +8,6 @@ class Map2 {
      * @param delimiter Optional: the delimiter to use. Default is comma.
      * @returns {String}
      */
-	static Join(separators := [':', ', ']) {
-
-		result := ""
-
-		for Key, Value in this
-			result .= Key separators[1] Value separators[2]
-
-		return RTrim(result, separators[2])
-	}
 
 	static ToObj() {
     
@@ -26,17 +17,6 @@ class Map2 {
             result.%key% := value is Map ? value.ToObj() : value
 
         return result
-    }
-
-    static Merge(mapObjs*) {
-
-        mp := this
-        
-        for mapObj in mapObjs 
-            for key, value in mapObj
-                mp.Set(key, value)
-
-        return mp
     }
 }
 

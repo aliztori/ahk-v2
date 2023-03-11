@@ -603,6 +603,7 @@ Class String2 {
 		for Value in Array
 			result .= Value this
 
-		return (len := StrLen(this)) ? SubStr(result, 1, -len) : result
+		; return (len := StrLen(this)) ? SubStr(result, 1, -len) : result
+		return RTrim(result, this)
 	}
 }
