@@ -1,4 +1,4 @@
-#Include <Abstractions\\Scripts>
+#Include <Abstractions\Scripts>
 
 #SuspendExempt true
 {
