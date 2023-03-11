@@ -66,12 +66,12 @@ Class String2 {
 		
 		; Add String2 methods and properties into String object
 		__ObjDefineProp := Object.Prototype.DefineProp
-		for __String2_Prop in String2.OwnProps()
+		for __String2_Prop in this.OwnProps()
 			if SubStr(__String2_Prop, 1, 2) != "__"
-				__ObjDefineProp(String.Prototype, __String2_Prop, String2.GetOwnPropDesc(__String2_Prop))
+				__ObjDefineProp(String.Prototype, __String2_Prop, this.GetOwnPropDesc(__String2_Prop))
 
-		__ObjDefineProp(String.Prototype, "__Item", {get: (args*) =>String2.__Item[args*]})
-		__ObjDefineProp(String.Prototype, "__Enum", {call: String2.__Enum})
+		__ObjDefineProp(String.Prototype, "__Item", {get: (args*) =>this.__Item[args*]})
+		__ObjDefineProp(String.Prototype, "__Enum", {call: this.__Enum})
 	}
 
 

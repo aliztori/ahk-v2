@@ -1,6 +1,6 @@
 Class Input {
 	
-	static Call(Length := 1, Timeout?, EndKeys?) {
+	static Call(Length := 1, EndKeys?, Timeout?) {
 
 		Options := IsSet(Length) ? "L" Length : unset
 

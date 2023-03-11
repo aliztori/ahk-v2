@@ -32,9 +32,16 @@ class Ini {
 		} 
 	}
 
-	DelKey(Key, Section := this.Section) => IniDelete(this.File, Section, Key)
-	DelSec(Section := this.Section) => IniDelete(this.File, Section)
+	DelKey(Key, Section?) {
+		Section := Section ?? this.Section
+		IniDelete(this.File, Section, Key)
+	}
 	
+	DelSec(Section?) {
+		Section := Section ?? this.Section
+		IniDelete(this.File, Section)
+	}
+
 	ReadKey(Key, Section?, Default?)
 	{
 		Default := Default ?? (this.HasOwnProp('Default') ? this.Default : unset)

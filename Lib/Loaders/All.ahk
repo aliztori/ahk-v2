@@ -13,6 +13,7 @@
 
 ; Abstractions
 #Include <Abstractions\Registers>
+#Include <Abstractions\Scripts>
 #Include <Abstractions\Detect>
 #Include <Abstractions\WinGet>
 #Include <Abstractions\Mouse>
@@ -27,7 +28,6 @@
 #Include <Utils\Highlight>
 #Include <Utils\HotZone>
 #Include <Utils\Windows>
-#Include <Utils\Scripts>
 #Include <Utils\Monitor>
 #Include <Utils\Morse>
 #Include <Utils\Coord>
