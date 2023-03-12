@@ -1,1 +1,10 @@
-*
+Support Files
+Scr
+
+# Lib2/Script/App/Premiere.ahk
+# Lib2/App/Premiere.ahk
+/Lib/**/Premiere.ahk
+
+PC Startup.ahk
+Main.ahk
+Test.ahk
